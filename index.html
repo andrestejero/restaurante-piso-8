@@ -1,14 +1,150 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>restaurante-piso-8</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Octavo Piso</title>
+<meta name="description" content="Menú para socios del Restaurante Octavo Piso, Círculo de la Fuerza Aérea Argentina, sede Vicente López.">
+<link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
-    <h1>Fuerza Aerea</h1>
-    <p>restaurante-piso-8</p>
+<header class="topbar">
+  <img class="crest" src="images/logo.png" alt="Escudo del Círculo de la Fuerza Aérea Argentina">
+  <div class="topbar-text">
+    <div class="topbar-eyebrow">Círculo de la Fuerza Aérea Argentina</div>
+    <div class="topbar-title">Restaurante Octavo Piso</div>
+    <div class="topbar-sub">Sede Vicente López</div>
+  </div>
+  <a class="topbar-call" href="tel:+541170982216" aria-label="Llamar para reservar">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+  </a>
+</header>
 
+<section class="hero">
+  <span class="hero-tag">Menú para socios · valores vigentes</span>
+  <h1>Cocina de altura,<br>vista al río</h1>
+  <div class="hero-rule"></div>
+  <p>Entradas, parrilla, pastas caseras y postres, servidos en el octavo piso del Círculo con la puesta de sol de Vicente López de fondo.</p>
+</section>
+
+<nav class="catnav-wrap">
+  <div class="catnav" id="catnav">
+    <button data-target="entradas" class="active">Entradas</button>
+    <button data-target="parrilla">Parrilla y Minutas</button>
+    <button data-target="pastas">Pastas</button>
+    <button data-target="sugerencias">Sugerencias del Chef</button>
+    <button data-target="postres">Postres</button>
+  </div>
+</nav>
+
+<main>
+
+  <section class="section reveal" id="entradas">
+    <div class="section-head">
+      <span class="section-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 20c8 0 13-5 13-13 0-.5 0-1-.06-1.5C11.5 5.5 6 10 6 18c0 .7.05 1.36.14 2"/><path d="M6 20c-1.5-3-1.9-6.2-1-9"/></svg></span>
+      <h2>Entradas</h2>
+      <span class="rule"></span>
+    </div>
+    <ul class="items">
+      <li class="item"><span class="name">Ensalada Capresse c/jamón crudo</span><span class="dots"></span><span class="price">$ 9.200</span></li>
+      <li class="item"><span class="name">Vitel Toné</span><span class="dots"></span><span class="price">$ 7.500</span></li>
+      <li class="item"><span class="name">Empanada de carne (1)</span><span class="dots"></span><span class="price">$ 3.400</span></li>
+      <li class="item"><span class="name">Tortilla individual de papa</span><span class="dots"></span><span class="price">$ 5.300</span></li>
+      <li class="item"><span class="name">Bastones de mozzarella c/salsa fileto</span><span class="dots"></span><span class="price">$ 7.000</span></li>
+      <li class="item"><span class="name">Omelette mixto</span><span class="dots"></span><span class="price">$ 8.600</span></li>
+      <li class="item"><span class="name">Rabas (porción)</span><span class="dots"></span><span class="price">$ 11.300</span></li>
+    </ul>
+  </section>
+
+  <section class="section reveal" id="parrilla">
+    <div class="section-head">
+      <span class="section-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a6 6 0 1 1-12 0c0-1 .23-2.23 1.5-3.5.316.5 1.5 1.5 1.5 3z"/></svg></span>
+      <h2>Parrilla y Minutas</h2>
+      <span class="rule"></span>
+    </div>
+    <ul class="items">
+      <li class="item"><span class="name">Bife de Chorizo</span><span class="dots"></span><span class="price">$ 28.500</span></li>
+      <li class="item"><span class="name">Pollo Grillé</span><span class="dots"></span><span class="price">$ 8.600</span></li>
+      <li class="item"><span class="name">Milanesa de Ternera c/guarnición</span><span class="dots"></span><span class="price">$ 12.600</span></li>
+      <li class="item"><span class="name">Milanesa Napolitana</span><span class="dots"></span><span class="price">$ 15.700</span></li>
+      <li class="item"><span class="name">Milanesa de Pollo c/guarnición</span><span class="dots"></span><span class="price">$ 12.200</span></li>
+      <li class="item"><span class="name">Milanesa de Pollo Napolitana</span><span class="dots"></span><span class="price">$ 15.000</span></li>
+      <li class="item"><span class="name">Pollo relleno c/guarnición</span><span class="dots"></span><span class="price">$ 16.500</span></li>
+      <li class="item"><span class="name">Pollo Bonne Femme</span><span class="dots"></span><span class="price">$ 16.500</span></li>
+    </ul>
+  </section>
+
+  <section class="section reveal" id="pastas">
+    <div class="section-head">
+      <span class="section-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12c2 2 4 2 6 0s4-2 6 0 4 2 6 0"/><path d="M4 16c2 2 4 2 6 0s4-2 6 0 4 2 6 0"/><path d="M6 8c1.5-2.5 3-4 6-4s4.5 1.5 6 4"/></svg></span>
+      <h2>Pastas</h2>
+      <span class="rule"></span>
+    </div>
+    <ul class="items">
+      <li class="item"><span class="name">Raviolones de Osobuco al Malbec</span><span class="dots"></span><span class="price">$ 20.200</span></li>
+      <li class="item"><span class="name">Raviolones de Calabaza y Parmesano</span><span class="dots"></span><span class="price">$ 15.800</span></li>
+      <li class="item"><span class="name">Ñoquis</span><span class="dots"></span><span class="price">$ 7.500</span></li>
+      <li class="item"><span class="name">Sorrentinos de Jamón y Nuez</span><span class="dots"></span><span class="price">$ 15.800</span></li>
+    </ul>
+  </section>
+
+  <section class="section reveal" id="sugerencias">
+    <div class="section-head">
+      <span class="section-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 19h12"/><path d="M7 19V9.5C5.5 9 5 7.6 5 6.5 5 4 7.2 2 10 2c1 0 1.6.4 2 1 .4-.6 1-1 2-1 2.8 0 5 2 5 4.5 0 1.1-.5 2.5-2 3V19"/></svg></span>
+      <h2>Sugerencias del Chef</h2>
+      <span class="rule"></span>
+    </div>
+    <ul class="items">
+      <li class="item"><span class="name">Bondiola a la cerveza negra</span><span class="dots"></span><span class="price">$ 17.800</span></li>
+      <li class="item"><span class="name">Matambre a la pizza</span><span class="dots"></span><span class="price">$ 17.600</span></li>
+      <li class="item"><span class="name">Trucha Maître d'Hotel</span><span class="dots"></span><span class="price">$ 22.400</span></li>
+      <li class="item"><span class="name">Merluza a la Romana</span><span class="dots"></span><span class="price">$ 13.400</span></li>
+      <li class="item"><span class="name">Merluza a la Griega</span><span class="dots"></span><span class="price">$ 12.300</span></li>
+      <li class="item"><span class="name">Ensalada Azul</span><span class="dots"></span><span class="price">$ 10.000</span></li>
+      <li class="item"><span class="name">Ojo de Bife c/guarnición</span><span class="dots"></span><span class="price">$ 31.000</span></li>
+      <li class="item"><span class="name">Raviolones de Salmón con tinta negra</span><span class="dots"></span><span class="price">$ 20.200</span></li>
+    </ul>
+  </section>
+
+  <section class="section reveal" id="postres">
+    <div class="section-head">
+      <span class="section-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21v-6a8 8 0 0 1 16 0v6"/><path d="M4 21h16"/><path d="M12 3v4"/><path d="M4 15h16"/></svg></span>
+      <h2>Postres</h2>
+      <span class="rule"></span>
+    </div>
+    <ul class="items">
+      <li class="item"><span class="name">Flan Casero c/salsa de caramelo</span><span class="dots"></span><span class="price">$ 5.600</span></li>
+      <li class="item"><span class="name">Helado</span><span class="dots"></span><span class="price">$ 5.900</span></li>
+      <li class="item"><span class="name">Macedonia de Frutas</span><span class="dots"></span><span class="price">$ 5.600</span></li>
+      <li class="item"><span class="name">Budín de Pan c/salsa de caramelo</span><span class="dots"></span><span class="price">$ 5.600</span></li>
+      <li class="item"><span class="name">Bombón Escocés</span><span class="dots"></span><span class="price">$ 5.600</span></li>
+      <li class="item"><span class="name">Lemon Pie</span><span class="dots"></span><span class="price">$ 6.800</span></li>
+      <li class="item"><span class="name">Crumble de manzana c/helado</span><span class="dots"></span><span class="price">$ 7.400</span></li>
+      <li class="item"><span class="name">Cheesecake c/frutos rojos</span><span class="dots"></span><span class="price">$ 7.400</span></li>
+      <li class="item"><span class="name">Brownie c/helado y salsa de frutos rojos</span><span class="dots"></span><span class="price">$ 7.400</span></li>
+      <li class="item"><span class="name">Porción de crema o dulce de leche</span><span class="dots"></span><span class="price">$ 1.200</span></li>
+    </ul>
+  </section>
+
+  <div class="callout">
+    <p>El mejor lugar para compartir buenos momentos, con amigos, en familia o con colegas.</p>
+    <a class="call-btn" href="tel:+541170982216">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      Reservas al 11-7098-2216
+    </a>
+    <p class="price-note">Valores vigentes, sujetos a modificación sin previo aviso.</p>
+  </div>
+
+</main>
+
+<footer>
+  <img class="crest" src="images/logo.png" alt="">
+  <p class="tagline">Círculo de la Fuerza Aérea Argentina</p>
+  <p class="sub">Restaurante Octavo Piso &middot; Sede Vicente López</p>
+  <p class="thanks">¡Gracias por elegirnos!</p>
+</footer>
+
+<script src="js/main.js"></script>
 </body>
 </html>
