@@ -235,6 +235,13 @@ h1, h2, h3 {
 /* ---------- Sections ---------- */
 main { max-width: 640px; margin: 0 auto; padding: 0.5rem 1rem 2rem; }
 
+.menu-status {
+  text-align: center;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  padding: 1.4rem 0.5rem;
+}
+
 .section {
   padding: 1.7rem 0 0.6rem;
   scroll-margin-top: var(--nav-height);
