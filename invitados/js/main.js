@@ -1,10 +1,11 @@
-// El contenido del menú vive en esta planilla de Google Sheets, publicada como CSV.
-// Para agregar, quitar o repreciar platos: editar la planilla, no este archivo.
-// La lógica de carga/render es compartida — ver js/menu-core.js.
+// El contenido del menú vive en la misma planilla de Google Sheets que el
+// menú de socios, pero esta versión lee la columna PRECIO INVITADOS en vez
+// de PRECIO. La lógica de carga/render es compartida — ver ../js/menu-core.js.
 var MENU_CSV_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vT4Oz3X1dRFlF-7Tj5RXA6HCCrf1a6qCZfMTzcEBS7u4orzlO-fYYVETwECddN1nb_EyjjLHqJJfXdl/pub?output=csv';
 
 // Se usa solo si la planilla no responde (sin conexión, Google caído, etc.),
-// para que el sitio nunca quede en blanco.
+// para que el sitio nunca quede en blanco. Actualizar estos precios a mano
+// si los valores de invitados difieren de los de socios.
 var FALLBACK_MENU = [
   { id: 'entradas', name: 'Entradas', items: [
     { nombre: 'Ensalada Capresse c/jamón crudo', precio: '$ 9.200' },
@@ -55,4 +56,4 @@ var FALLBACK_MENU = [
   ]}
 ];
 
-loadMenu({ csvUrl: MENU_CSV_URL, priceColumn: 'PRECIO', fallbackMenu: FALLBACK_MENU });
+loadMenu({ csvUrl: MENU_CSV_URL, priceColumn: 'PRECIO INVITADOS', fallbackMenu: FALLBACK_MENU });

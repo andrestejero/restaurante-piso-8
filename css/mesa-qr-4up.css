@@ -1,0 +1,117 @@
+/* ---------- 4-up QR print sheet ---------- */
+.sheet-intro {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 1.4rem 1rem 0;
+  text-align: center;
+}
+.sheet-intro p {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  max-width: 34em;
+  margin: 0 auto 1rem;
+}
+.print-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--gold);
+  color: var(--surface);
+  font-weight: 700;
+  font-size: 0.9rem;
+  padding: 0.65em 1.3em;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  letter-spacing: 0.01em;
+}
+.print-btn svg { width: 16px; height: 16px; }
+
+.sheet {
+  max-width: 780px;
+  margin: 1.6rem auto 2rem;
+  padding: 0 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  border: 1px dashed var(--line);
+}
+
+.tag {
+  border: 1px dashed var(--line);
+  margin: -1px;
+  padding: 1rem 0.8rem 0.9rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.tag-crest {
+  width: 26px;
+  height: 26px;
+  margin-bottom: 0.35rem;
+  opacity: 0.85;
+}
+.tag-eyebrow {
+  font-size: 0.55rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--gold-strong);
+  margin: 0 0 0.2rem;
+}
+.tag h2 {
+  margin: 0 0 0.6rem;
+  font-size: 0.92rem;
+  font-weight: 700;
+  line-height: 1.15;
+}
+.tag-frame {
+  display: inline-block;
+  padding: 0.5rem;
+  background: #fff;
+  border: 1.5px solid var(--gold);
+  border-radius: 8px;
+}
+.tag-code {
+  width: 32mm;
+  height: auto;
+  display: block;
+}
+.tag-hint {
+  margin: 0.55rem 0 0;
+  font-size: 0.62rem;
+  color: var(--text-muted);
+  max-width: 14em;
+}
+.tag-name {
+  margin: 0.35rem 0 0;
+  font-size: 0.6rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+/* ---------- Print: exactly 4 tags per A4 sheet ---------- */
+@media print {
+  @page { size: A4 portrait; margin: 10mm; }
+
+  body { background: #fff; }
+
+  .topbar, .hero, .sheet-intro, footer { display: none; }
+
+  .sheet {
+    max-width: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .tag {
+    padding: 8mm 6mm;
+    break-inside: avoid;
+    justify-content: center;
+  }
+  .tag-code { width: 34mm; }
+}

@@ -3,11 +3,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Octavo Piso</title>
-<meta name="description" content="Menú para socios del Restaurante Octavo Piso, Círculo de la Fuerza Aérea Argentina, sede Vicente López.">
+<title>Escaneá el menú · Octavo Piso</title>
+<meta name="description" content="Cartel de mesa con código QR al menú del Restaurante Octavo Piso, Círculo de la Fuerza Aérea Argentina, sede Vicente López.">
 <link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/mesa-qr.css">
 </head>
-<body>
+<body class="qr-body">
 
 <header class="topbar">
   <img class="crest" src="images/logo.png" alt="Escudo del Círculo de la Fuerza Aérea Argentina">
@@ -21,21 +22,23 @@
   </a>
 </header>
 
-<section class="hero">
+<section class="hero qr-hero">
   <span class="hero-tag">Menú para socios · valores vigentes</span>
   <h1>Cocina de altura,<br>vista al río</h1>
   <div class="hero-rule"></div>
   <p>Entradas, parrilla, pastas caseras y postres, servidos en el octavo piso del Círculo con la puesta de sol de Vicente López de fondo.</p>
 </section>
 
-<nav class="catnav-wrap">
-  <div class="catnav" id="catnav"></div>
-</nav>
-
-<main>
-
-  <p class="menu-status" id="menu-status">Cargando el menú…</p>
-  <div id="menu-sections"></div>
+<main class="qr-main">
+  <div class="qr-card">
+    <p class="qr-eyebrow">Nuestro menú</p>
+    <h2>Escaneá el código<br>para ver la carta</h2>
+    <div class="qr-frame">
+      <img class="qr-code" src="images/qr.jpg" alt="Código QR al menú digital de Octavo Piso" width="600" height="600">
+    </div>
+    <div class="qr-frame-rule"></div>
+    <p class="qr-hint">Abrí la cámara de tu celular y apuntá al código</p>
+  </div>
 
   <div class="callout">
     <p>El mejor lugar para compartir buenos momentos, con amigos, en familia o con colegas.</p>
@@ -45,7 +48,6 @@
     </a>
     <p class="price-note">Valores vigentes, sujetos a modificación sin previo aviso.</p>
   </div>
-
 </main>
 
 <footer>
@@ -55,7 +57,5 @@
   <p class="thanks">¡Gracias por elegirnos!</p>
 </footer>
 
-<script src="js/menu-core.js"></script>
-<script src="js/main.js"></script>
 </body>
 </html>
