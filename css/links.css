@@ -1,0 +1,71 @@
+/* ---------- Quick-links page ---------- */
+.links-main {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 1.6rem 1rem 2rem;
+}
+
+.links-group {
+  margin-bottom: 1.6rem;
+}
+.links-group h2 {
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  margin: 0 0 0.7rem;
+  color: var(--gold-strong);
+}
+
+.link-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.link-card {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  box-shadow: var(--shadow);
+  padding: 0.9rem 1rem;
+  text-decoration: none;
+  color: inherit;
+}
+.link-card-icon {
+  flex: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 999px;
+  background: var(--surface-2);
+  border: 1px solid var(--line);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.link-card-icon svg {
+  width: 20px;
+  height: 20px;
+  stroke: var(--gold-strong);
+}
+.link-card-text { min-width: 0; }
+.link-card-title {
+  font-weight: 700;
+  font-size: 0.92rem;
+}
+.link-card-sub {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+.link-card-arrow {
+  margin-left: auto;
+  flex: none;
+  width: 16px;
+  height: 16px;
+  stroke: var(--text-muted);
+}
